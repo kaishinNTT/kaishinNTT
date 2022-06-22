@@ -1,4 +1,4 @@
-// ex051.cpp : ƒRƒ“ƒ\[ƒ‹ ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒGƒ“ƒgƒŠ ƒ|ƒCƒ“ƒg‚ğ’è‹`‚µ‚Ü‚·B
+// ex051.cpp : ã‚³ãƒ³ã‚½ãƒ¼ãƒ« ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ã‚¨ãƒ³ãƒˆãƒª ãƒã‚¤ãƒ³ãƒˆã‚’å®šç¾©ã—ã¾ã™ã€‚
 //
 
 #include "stdafx.h"
@@ -9,18 +9,18 @@ void intenn(int t[], int n)
 	int s;
 	for (s = 0; s <= n-1; s++)
 	{
-		printf_s("%d”Ô‚Ìl‚Ì“_”‚ğ“ü—Í‚µ‚Ä‰º‚³‚¢\n", s+1);
+		printf_s("%dç•ªã®äººã®ç‚¹æ•°ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„\n", s+1);
 		scanf_s("%d", &t[s]);
 	}
 }
 int menu()
 {
 	int ba;
-	printf_s("\n\nƒƒjƒ…[\n1. Max‚ğ‹‚ßÁ‚·i“¯‡ˆ—•tj\n2.©•ª‚æ‚è‘å‚«‚¢’l‚ª‚¢‚­‚Â‚ ‚é‚©\n3.‘“–‚½‚è‚Å¬‚³‚¢‚Ù‚¤‚Éƒvƒ‰ƒX\n4. WKƒ\[ƒgA‰½”Ô–Ú‚©\n5.I—¹\n”Ô†‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+	printf_s("\n\nãƒ¡ãƒ‹ãƒ¥ãƒ¼\n1. Maxã‚’æ±‚ã‚æ¶ˆã™ï¼ˆåŒé †å‡¦ç†ä»˜ï¼‰\n2.è‡ªåˆ†ã‚ˆã‚Šå¤§ãã„å€¤ãŒã„ãã¤ã‚ã‚‹ã‹\n3.ç·å½“ãŸã‚Šã§å°ã•ã„ã»ã†ã«ãƒ—ãƒ©ã‚¹\n4. WKã‚½ãƒ¼ãƒˆã€ä½•ç•ªç›®ã‹\n5.çµ‚äº†\nç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„\n");
 	scanf_s("%d", &ba);
 	while (1>ba && ba>5)
 	{
-		printf_s("“ü—ÍƒGƒ‰[‚Å‚·B‚à‚¤1“x”Ô†‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+		printf_s("å…¥åŠ›ã‚¨ãƒ©ãƒ¼ã§ã™ã€‚ã‚‚ã†1åº¦ç•ªå·ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„\n");
 		scanf_s("%d", &ba);
 	}
 	return(ba);
@@ -67,10 +67,10 @@ void jun1max(int a[], int n)
 		}
 		w[maxs] = -1;
 	}
-	printf_s("•û–@1. Max‚ğ‹‚ßÁ‚·\n");
-	printf_s("“_”:"   );
+	printf_s("æ–¹æ³•1. Maxã‚’æ±‚ã‚æ¶ˆã™\n");
+	printf_s("ç‚¹æ•°:"   );
 	hahyoji(a, n);
-	printf_s("‡ˆÊ:"   );
+	printf_s("é †ä½:"   );
 	hahyoji(j, n);
 }
 void jun2ikutu(int a[], int n)
@@ -89,10 +89,10 @@ void jun2ikutu(int a[], int n)
 		}
 		
 	}
-	printf_s("•û–@2.‘å‚«‚¢‚à‚Ì‚ğ‚©‚¼‚¦‚é\n");
-	printf_s("“_”:");
+	printf_s("æ–¹æ³•2.å¤§ãã„ã‚‚ã®ã‚’ã‹ããˆã‚‹\n");
+	printf_s("ç‚¹æ•°:");
 	hahyoji(a, n);
-	printf_s("‡ˆÊ:");
+	printf_s("é †ä½:");
 	hahyoji(j, n);
 }
 void jun3souatari(int a[], int n)
@@ -120,10 +120,10 @@ void jun3souatari(int a[], int n)
 
 		}
 	}
-	printf_s("•û–@3.‘“–‚½‚è\n");
-	printf_s("“_”:");
+	printf_s("æ–¹æ³•3.ç·å½“ãŸã‚Š\n");
+	printf_s("ç‚¹æ•°:");
 	hahyoji(a, n);
-	printf_s("‡ˆÊ:");
+	printf_s("é †ä½:");
 	hahyoji(j, n);
 }
 void jun4wksort(int a[], int n)
@@ -157,16 +157,16 @@ void jun4wksort(int a[], int n)
 		}
 		j[s] = k + 1;
 	}
-	printf_s("•û–@4. WKƒ\[ƒg\n");
-	printf_s("“_”:");
+	printf_s("æ–¹æ³•4. WKã‚½ãƒ¼ãƒˆ\n");
+	printf_s("ç‚¹æ•°:");
 	hahyoji(a, n);
-	printf_s("‡ˆÊ:");
+	printf_s("é †ä½:");
 	hahyoji(j, n);
 }
 void main()
 {
 	int mn, ba, t[30];
-	printf_s("‰½l‚ÌƒNƒ‰ƒX‚Å‚·‚©Hl”‚ğ30lˆÈ‰º‚Å“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+	printf_s("ä½•äººã®ã‚¯ãƒ©ã‚¹ã§ã™ã‹ï¼Ÿäººæ•°ã‚’30äººä»¥ä¸‹ã§å…¥åŠ›ã—ã¦ãã ã•ã„\n");
 	scanf_s("%d", &mn);
 	intenn(t, mn);
 	do
